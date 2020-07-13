@@ -104,8 +104,33 @@ body {
 .news {
   grid-area: news;
   @include center();
+  white-space: nowrap;
+  overflow: hidden;
+  span {
+    animation: scrollText 3s linear infinite forwards;
+  }
+}
+
+@keyframes scrollText {
+  0% {
+    transform: translateX(-150px);
+  }
+  50% {
+    transform: translateX(150px);
+  }
+  100% {
+    transform: translateX(-150px);
+  }
 }
 
 .emptyBox3 {
   grid-area: emptyBox3;
+}
+
+.menuExtended {
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  height: 100%;
+  width: 100%;
 }
