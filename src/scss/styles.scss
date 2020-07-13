@@ -31,6 +31,7 @@ body {
 }
 
 .logo {
+  text-decoration: none;
   @include center();
   grid-area: logo;
   letter-spacing: -6px;
