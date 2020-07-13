@@ -1,0 +1,18 @@
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin hover {
+  cursor: pointer;
+  background-color: $brown;
+  color: white;
+  transition-duration: 0.5s;
+}
+
+@mixin notHover {
+  background-color: white;
+  color: $brown;
+  transition-duration: 0.5s;
+}
